@@ -6,14 +6,14 @@ from LinearRegression import MultipleLinearRegression
 import matplotlib.pyplot as plt
 
 # Đọc dữ liệu từ thư mục data_generation
-df = pd.read_csv('../data_generation/house_prices.csv')
+df = pd.read_csv('../Du_doan_gia_nha/house_prices.csv')
 
 # Tách features và target
 X = df.drop('price', axis=1).values
 y = df['price'].values
 
 # Chia dữ liệu thành train và test
-X_train, X_test, y_train, y_test = train_tefst_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Chuẩn hóa dữ liệu
 scaler = StandardScaler()

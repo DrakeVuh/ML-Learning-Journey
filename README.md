@@ -30,8 +30,8 @@ source ml_study/bin/activate  # Linux/Mac
 # hoặc
 ml_study\Scripts\activate     # Windows
 
-# Cài đặt thư viện
-pip install numpy pandas matplotlib scikit-learn jupyter
+# Cài đặt thư viện từ requirements.txt
+pip install -r requirements.txt
 ```
 
 ### **Cách 3: Cài đặt cho macOS**
@@ -47,8 +47,8 @@ brew install python@3.10
 python3.10 -m venv ml_study
 source ml_study/bin/activate
 
-# Cài đặt thư viện
-pip install numpy pandas matplotlib scikit-learn jupyter
+# Cài đặt thư viện từ requirements.txt
+pip install -r requirements.txt
 ```
 
 ### **Cách 4: Cài đặt cho máy yếu (CPU-only, RAM thấp)**
@@ -67,7 +67,7 @@ conda install numpy=1.21 pandas=1.3 matplotlib=3.4 scikit-learn=1.0
 conda install jupyter
 
 # Hoặc dùng pip với phiên bản cũ hơn
-pip install numpy==1.21.6 pandas==1.3.5 matplotlib==3.4.3 scikit-learn==1.0.2 jupyter
+pip install -r requirements.txt
 ```
 
 
